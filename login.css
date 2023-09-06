@@ -1,0 +1,120 @@
+.Lgin{
+    position: relative;
+    top: 125px;
+    left: 0px;
+    margin: auto ;
+    width: 450px;
+    height: 550px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#login{
+    margin: auto;
+    width: 60%;
+    position: relative;
+    top: 13%;
+    height: 65%;
+    text-align: center;
+}
+#midd{
+    text-align: left;
+    position: relative;
+    top: 35px;
+}
+.input{
+    font-weight: 400;
+    font-size: 110%;
+}
+.inputs{
+    position: relative;
+    top: 10px;
+    width: 95%;
+    height: 35px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 95%;
+    border: 1px solid black;
+}
+.password{
+    position: relative;
+    top: -5px;
+    
+}
+#roww{
+    position: relative;
+    top: 27.5%;
+}
+#ok{
+    width: 95%;
+    height: 40px;
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+    font-size: 100%;
+}
+#go{
+    text-decoration: none;
+    color: white;
+}
+#gaif{
+    position: relative;
+    left: 15px;
+    color: lightgray;
+    float: left;
+    width: 70%;
+    height: 20px;
+}
+#hweone{
+    position: relative;
+    top: -20px;
+    color: #c0c0c0;
+    font-weight: 400;
+}
+#sign_up{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 90%;
+    color: #5d5d5d;
+}
+.ho{
+    position: relative;
+    top: 125px;
+    left: 0px;
+    margin: auto ;
+    width: 500px;
+    height: 650px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#rocky{
+    margin: auto;
+    width: 60%;
+    position: relative;
+    top: 5%;
+    height: 80%;
+    text-align: center;
+}
+#midd{
+    text-align: left;
+    position: relative;
+    top: 35px;
+}
+#name{
+    position: relative;
+    top: -15px;
+}
+#Password{
+    position: relative;
+    top: 15px;
+}
+#re{
+    position: relative;
+    top: 20px;
+}
+#roww{
+    position: relative;
+    top: 15%;
+}
+
+
+

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 게시판</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <header id="header">
+        <div style="float: left;width: 79.9%;height: 100%;">
+        <img src="" alt="">
+    </div>
+        <div style="float: right;width: 19.8%;height: 100%;">
+            <div style="height: 50px; width: 49%; float: left;">
+                <br>
+                <a style="text-decoration: none;color: white;" href=""><h3>Board</h3></a>
+            </div>
+            <div style="height: 50px; width: 49%; float: right;">
+                <br>
+                <a style="text-decoration: none;color: white;" href="login.html"><h3>Login</h3></a>
+            </div>
+        </div>
+    </header>
+    <div id="container">
+        
+        <!-- 새 게시물 입력 폼 -->
+        <br>
+        <button style="width: 100px;height: 30px;background-color: white; " id="toggleButton">글 쓰기 <img style="width: 20px;" src="data:image/png;base64,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" alt=""></button>
+        <div style="display: none;" id="myDiv">
+            <h1>Poting</h1>
+            <div style="float: left; border: 3px solid black;width: 300px;text-align: center;">
+                <input style="border: 0px;width: 300px;height: 50px;" type="text" id="title" placeholder="제목">
+            </div>
+            <div style="float: right; border: 3px solid black;width: 300px;text-align: center;">
+                <input style="border: 0px;width: 300px;height: 50px;" type="text" id="maker" placeholder="작성자">
+            </div>
+            <div style="position: relative;top: 60px; border: 3px solid black;width: 1002px;height: 401px; text-align: center;">
+                <input type="text" style="position: relative;bottom: 50px;border:0px; width:1000px; height: 400px;" id="content" placeholder="내용"></input>
+            </div>
+            <button style="position: relative;top: 100px;" onclick="addPost()">게시물 추가</button>
+        </div>
+
+        <!-- 게시판 내용 -->
+        <div id="make">
+            <h3 style="font-weight: 100;">게시물 목록</h3>
+            <div style="float: left;width: 45%;">
+                <h1>제목</h1>
+            </div>
+            <div style="float: right;width: 35%;text-align: right;">
+                <h1>작성자</h1>
+            </div>
+            <div style="float: right;width: 15%;text-align: right;">
+                <h1>게시 시간</h1>
+            </div>
+            <br><br><br><hr><br>
+            <ul id="postList">
+                <!-- 게시물이 여기에 추가됩니다. -->
+            </ul>
+        </div>
+
+        <script>
+            // 버튼과 div 요소를 가져옵니다.
+            const toggleButton = document.getElementById('toggleButton');
+            const myDiv = document.getElementById('myDiv');
+            const make = document.getElementById("make")
+            
+        // 버튼 클릭 이벤트 리스너를 추가합니다.
+        toggleButton.addEventListener('click', function() {
+            // div의 현재 스타일(display) 값을 가져옵니다.
+            const currentDisplayStyle_mydiv = window.getComputedStyle(myDiv).display;
+
+            // 현재 스타일 값에 따라 토글 작업을 수행합니다.
+            if (currentDisplayStyle_mydiv === 'none') {
+                // 글쓰기 화면으로 전환
+                myDiv.style.display = 'block';
+                make.style.display = 'none';
+                
+            } else {
+                // 게시판 내용으로 전환
+                myDiv.style.display = 'none';
+                make.style.display = 'block';
+            }
+        });
+        </script>
+        
+        <!-- 게시물 목록 -->
+    </div>
+
+    <script>
+        // 게시물 데이터 배열
+        let posts = [];
+
+        // 게시물 추가 함수
+        function addPost() {
+            const title = document.getElementById('title').value;
+            const content = document.getElementById('content').value;
+            const maker = document.getElementById("maker").value;
+
+            if (title && content && maker) {
+                const post = {
+                    title,
+                    maker,
+                    content
+                };
+
+                posts.push(post);
+                displayPosts();
+                clearInputFields();
+            }
+    }
+        // 게시물 삭제 함수
+        function deletePost(index) {
+            if (confirm("이 게시물을 삭제하시겠습니까?")) {
+                posts.splice(index, 1);
+                displayPosts();
+            }
+        }
+
+        // 게시물 수정 함수
+        function editPost(index) {
+            const updatedTitle = prompt("수정된 제목을 입력하세요:", posts[index].title);
+            const updatedContent = prompt("수정된 내용을 입력하세요:", posts[index].content);
+
+            if (updatedTitle !== null && updatedContent !== null) {
+                posts[index].title = updatedTitle;
+                posts[index].content = updatedContent;
+                displayPosts();
+            }
+        }
+
+        // 게시물 목록을 화면에 표시하는 함수
+        function displayPosts() {
+            const postList = document.getElementById('postList');
+            postList.innerHTML = '';
+
+            for (let i = 0; i < posts.length; i++) {
+                const li = document.createElement('li');
+                const date = new Date();
+                li.innerHTML = `
+                    <div id = "posting">
+                        <div id = "name_contents" style = "height:50px">
+                            <div style="float:left;width:29.6%;padding:10px;">
+                                <button style="background-color: white;border: none;" id="look_content" onclick="contents_look()"><strong>${posts[i].title}</strong></butoon>
+                            </div>
+                            <div style="text-align: center;">
+                                <p>${date.toLocaleString()}</p>
+                            </div>
+                            <div style="float:right;">
+                                <p>${posts[i].content}</p>
+                            </div>
+                            <div id="contents" style="float:left;width:100%;border:1px solid black;display: none;">
+                                <p>${posts[i].content}</p>
+                            </div>
+
+                        </div>
+                        <button onclick="editPost(${i})">수정</button>
+                        <button onclick="deletePost(${i})">삭제</button>
+                    </div>
+                `;
+                postList.appendChild(li);
+            }
+        }
+        function contents_look(){
+            const look_content = document.getElementById('look_content');
+            const content = document.getElementById('contents');
+            
+        // 버튼 클릭 이벤트 리스너를 추가합니다.
+        look_content.addEventListener('click', function() {
+            // div의 현재 스타일(display) 값을 가져옵니다.
+            const currentDisplayStyle_contents = window.getComputedStyle(contents).display;
+            if (currentDisplayStyle_contents === 'none') {
+                contents.style.display = 'block';                
+            } else {
+                contents.style.display = 'none';
+            }
+        });
+        }
+        // 입력 필드 초기화 함수
+        function clearInputFields() {
+            document.getElementById('title').value = '';
+            document.getElementById('content').value = '';
+            document.getElementById("maker").value = '';
+        }
+
+        // 초기 게시물 목록 표시
+        displayPosts();
+    </script>
+</body>
+</html>
